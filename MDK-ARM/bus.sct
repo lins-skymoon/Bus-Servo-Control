@@ -1,0 +1,12 @@
+LR_FLASH 0x08000000 0x00020000 {
+    ER_FLASH 0x08000000 0x00020000 {
+        startup_mm32f103.o (RESET, +FIRST)
+        *(InRoot$$Sections)
+        .ANY (+RO)
+    }
+    RW_SRAM 0x20000000 0x00004800 {
+        .ANY (+RW +ZI)
+    }
+    ARM_LIB_STACK 0x20005000 EMPTY -0x00000800 {
+    }
+}

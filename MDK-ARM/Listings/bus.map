@@ -1,0 +1,1382 @@
+Component: Arm Compiler for Embedded 6.19 Tool: armlink [5e73cb00]
+
+==============================================================================
+
+Section Cross References
+
+    board.o(.ARM.exidx.text.Board_EnableIrq) refers to board.o(.text.Board_EnableIrq) for [Anonymous Symbol]
+    board.o(.ARM.exidx.text.Board_DisableIrq) refers to board.o(.text.Board_DisableIrq) for [Anonymous Symbol]
+    board.o(.ARM.exidx.text.Board_PinMode) refers to board.o(.text.Board_PinMode) for [Anonymous Symbol]
+    board.o(.ARM.exidx.text.Board_PinWrite) refers to board.o(.text.Board_PinWrite) for [Anonymous Symbol]
+    board.o(.ARM.exidx.text.Board_PinRead) refers to board.o(.text.Board_PinRead) for [Anonymous Symbol]
+    board.o(.ARM.exidx.text.Board_Init) refers to board.o(.text.Board_Init) for [Anonymous Symbol]
+    board.o(.text.SysTick_Handler) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.SysTick_Handler) refers to links.o(.text.Links_CheckReceiveTimeouts) for Links_CheckReceiveTimeouts
+    board.o(.text.SysTick_Handler) refers to board.o(.bss.led_flash_requested) for led_flash_requested
+    board.o(.text.SysTick_Handler) refers to board.o(.bss.led_flash_ticks) for led_flash_ticks
+    board.o(.text.SysTick_Handler) refers to board.o(.bss.alarm_latched) for alarm_latched
+    board.o(.text.SysTick_Handler) refers to board.o(.bss.alarm_latched_at) for alarm_latched_at
+    board.o(.text.SysTick_Handler) refers to board.o(.bss.led_idle_high) for led_idle_high
+    board.o(.ARM.exidx.text.SysTick_Handler) refers to board.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    board.o(.text.Board_Millis) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.ARM.exidx.text.Board_Millis) refers to board.o(.text.Board_Millis) for [Anonymous Symbol]
+    board.o(.text.Board_Delay) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.ARM.exidx.text.Board_Delay) refers to board.o(.text.Board_Delay) for [Anonymous Symbol]
+    board.o(.text.Board_LatchAlarm) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.Board_LatchAlarm) refers to board.o(.bss.alarm_latched_at) for alarm_latched_at
+    board.o(.text.Board_LatchAlarm) refers to board.o(.bss.alarm_latched) for alarm_latched
+    board.o(.ARM.exidx.text.Board_LatchAlarm) refers to board.o(.text.Board_LatchAlarm) for [Anonymous Symbol]
+    board.o(.text.Board_CheckStartupVoltage) refers to board.o(.text.sample_battery) for sample_battery
+    board.o(.text.Board_CheckStartupVoltage) refers to board.o(.bss.battery_mv) for battery_mv
+    board.o(.text.Board_CheckStartupVoltage) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.Board_CheckStartupVoltage) refers to board.o(.bss.next_battery_check) for next_battery_check
+    board.o(.text.Board_CheckStartupVoltage) refers to board.o(.bss.alarm_latched_at) for alarm_latched_at
+    board.o(.text.Board_CheckStartupVoltage) refers to board.o(.bss.alarm_latched) for alarm_latched
+    board.o(.ARM.exidx.text.Board_CheckStartupVoltage) refers to board.o(.text.Board_CheckStartupVoltage) for [Anonymous Symbol]
+    board.o(.text.sample_battery) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.sample_battery) refers to board.o(.bss.battery_mv) for battery_mv
+    board.o(.ARM.exidx.text.sample_battery) refers to board.o(.text.sample_battery) for [Anonymous Symbol]
+    board.o(.text.Board_Battery) refers to board.o(.bss.battery_mv) for battery_mv
+    board.o(.ARM.exidx.text.Board_Battery) refers to board.o(.text.Board_Battery) for [Anonymous Symbol]
+    board.o(.text.Board_Beep) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.Board_Beep) refers to board.o(.bss.beep_pattern) for beep_pattern
+    board.o(.text.Board_Beep) refers to board.o(.bss.beep_age) for beep_age
+    board.o(.ARM.exidx.text.Board_Beep) refers to board.o(.text.Board_Beep) for [Anonymous Symbol]
+    board.o(.text.Board_SerialError) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.Board_SerialError) refers to board.o(.bss.serial_error_pending) for serial_error_pending
+    board.o(.ARM.exidx.text.Board_SerialError) refers to board.o(.text.Board_SerialError) for [Anonymous Symbol]
+    board.o(.text.Board_FlashLed) refers to board.o(.bss.led_flash_requested) for led_flash_requested
+    board.o(.ARM.exidx.text.Board_FlashLed) refers to board.o(.text.Board_FlashLed) for [Anonymous Symbol]
+    board.o(.text.Board_SetLedIdleLevel) refers to board.o(.bss.led_idle_high) for led_idle_high
+    board.o(.ARM.exidx.text.Board_SetLedIdleLevel) refers to board.o(.text.Board_SetLedIdleLevel) for [Anonymous Symbol]
+    board.o(.text.TIM2_IRQHandler) refers to board.o(.bss.serial_error_pending) for serial_error_pending
+    board.o(.text.TIM2_IRQHandler) refers to board.o(.bss.beep_pattern) for beep_pattern
+    board.o(.text.TIM2_IRQHandler) refers to board.o(.bss.alarm_latched) for alarm_latched
+    board.o(.text.TIM2_IRQHandler) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.TIM2_IRQHandler) refers to board.o(.bss.beep_age) for beep_age
+    board.o(.text.TIM2_IRQHandler) refers to board.o(.bss.buzzer_driven) for buzzer_driven
+    board.o(.ARM.exidx.text.TIM2_IRQHandler) refers to board.o(.text.TIM2_IRQHandler) for [Anonymous Symbol]
+    board.o(.text.Board_Service) refers to board.o(.bss.milliseconds) for milliseconds
+    board.o(.text.Board_Service) refers to board.o(.bss.next_battery_check) for next_battery_check
+    board.o(.text.Board_Service) refers to board.o(.text.sample_battery) for sample_battery
+    board.o(.text.Board_Service) refers to board.o(.bss.battery_mv) for battery_mv
+    board.o(.text.Board_Service) refers to board.o(.bss.low_battery_samples) for low_battery_samples
+    board.o(.text.Board_Service) refers to board.o(.bss.beep_pattern) for beep_pattern
+    board.o(.text.Board_Service) refers to board.o(.bss.beep_age) for beep_age
+    board.o(.text.Board_Service) refers to board.o(.bss.critical_battery_samples) for critical_battery_samples
+    board.o(.text.Board_Service) refers to board.o(.bss.alarm_latched_at) for alarm_latched_at
+    board.o(.text.Board_Service) refers to board.o(.bss.alarm_latched) for alarm_latched
+    board.o(.ARM.exidx.text.Board_Service) refers to board.o(.text.Board_Service) for [Anonymous Symbol]
+    main.o(.text.main) refers to board.o(.text.Board_Init) for Board_Init
+    main.o(.text.main) refers to board.o(.text.Board_Delay) for Board_Delay
+    main.o(.text.main) refers to usb_hid.o(.text.Usb_Init) for Usb_Init
+    main.o(.text.main) refers to links.o(.text.Links_Init) for Links_Init
+    main.o(.text.main) refers to flash.o(.text.Flash_Init) for Flash_Init
+    main.o(.text.main) refers to board.o(.text.Board_CheckStartupVoltage) for Board_CheckStartupVoltage
+    main.o(.text.main) refers to actions.o(.text.Actions_Init) for Actions_Init
+    main.o(.text.main) refers to controller.o(.text.Controller_Service) for Controller_Service
+    main.o(.text.main) refers to actions.o(.text.Actions_Service) for Actions_Service
+    main.o(.text.main) refers to board.o(.text.Board_Service) for Board_Service
+    main.o(.text.main) refers to board.o(.text.Board_LatchAlarm) for Board_LatchAlarm
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    startup_mm32f103.o(.text.Reset_Handler) refers to __main.o(!!!main) for __main
+    startup_mm32f103.o(.ARM.exidx.text.Reset_Handler) refers to startup_mm32f103.o(.text.Reset_Handler) for [Anonymous Symbol]
+    startup_mm32f103.o(.ARM.exidx.text.Default_Handler) refers to startup_mm32f103.o(.text.Default_Handler) for [Anonymous Symbol]
+    startup_mm32f103.o(RESET) refers to startup_mm32f103.o(.text.Reset_Handler) for Reset_Handler
+    startup_mm32f103.o(RESET) refers to startup_mm32f103.o(.text.Default_Handler) for Default_Handler
+    startup_mm32f103.o(RESET) refers to board.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_mm32f103.o(RESET) refers to usb_hid.o(.text.USB_IRQHandler) for USB_IRQHandler
+    startup_mm32f103.o(RESET) refers to board.o(.text.TIM2_IRQHandler) for TIM2_IRQHandler
+    startup_mm32f103.o(RESET) refers to links.o(.text.SPI2_IRQHandler) for SPI2_IRQHandler
+    startup_mm32f103.o(RESET) refers to links.o(.text.UART1_IRQHandler) for UART1_IRQHandler
+    startup_mm32f103.o(RESET) refers to links.o(.text.UART2_IRQHandler) for UART2_IRQHandler
+    startup_mm32f103.o(RESET) refers to links.o(.text.UART3_IRQHandler) for UART3_IRQHandler
+    flash.o(.text.Flash_Init) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    flash.o(.text.Flash_Init) refers to board.o(.text.Board_PinMode) for Board_PinMode
+    flash.o(.text.Flash_Init) refers to flash.o(.bss.flash_present) for flash_present
+    flash.o(.ARM.exidx.text.Flash_Init) refers to flash.o(.text.Flash_Init) for [Anonymous Symbol]
+    flash.o(.text.address_command) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    flash.o(.ARM.exidx.text.address_command) refers to flash.o(.text.address_command) for [Anonymous Symbol]
+    flash.o(.text.Flash_Read) refers to flash.o(.bss.flash_present) for flash_present
+    flash.o(.text.Flash_Read) refers to flash.o(.text.address_command) for address_command
+    flash.o(.text.Flash_Read) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    flash.o(.ARM.exidx.text.Flash_Read) refers to flash.o(.text.Flash_Read) for [Anonymous Symbol]
+    flash.o(.text.Flash_EraseSector) refers to flash.o(.bss.flash_present) for flash_present
+    flash.o(.text.Flash_EraseSector) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    flash.o(.text.Flash_EraseSector) refers to flash.o(.text.address_command) for address_command
+    flash.o(.text.Flash_EraseSector) refers to flash.o(.text.wait_ready) for wait_ready
+    flash.o(.ARM.exidx.text.Flash_EraseSector) refers to flash.o(.text.Flash_EraseSector) for [Anonymous Symbol]
+    flash.o(.text.wait_ready) refers to board.o(.text.Board_Millis) for Board_Millis
+    flash.o(.text.wait_ready) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    flash.o(.ARM.exidx.text.wait_ready) refers to flash.o(.text.wait_ready) for [Anonymous Symbol]
+    flash.o(.text.Flash_Write) refers to flash.o(.bss.flash_present) for flash_present
+    flash.o(.text.Flash_Write) refers to flash.o(.bss.sector) for sector
+    flash.o(.text.Flash_Write) refers to flash.o(.text.address_command) for address_command
+    flash.o(.text.Flash_Write) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    flash.o(.text.Flash_Write) refers to flash.o(.text.program) for program
+    flash.o(.text.Flash_Write) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    flash.o(.text.Flash_Write) refers to flash.o(.text.Flash_EraseSector) for Flash_EraseSector
+    flash.o(.ARM.exidx.text.Flash_Write) refers to flash.o(.text.Flash_Write) for [Anonymous Symbol]
+    flash.o(.text.program) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    flash.o(.text.program) refers to flash.o(.text.wait_ready) for wait_ready
+    flash.o(.text.program) refers to flash.o(.text.address_command) for address_command
+    flash.o(.ARM.exidx.text.program) refers to flash.o(.text.program) for [Anonymous Symbol]
+    links.o(.text.Links_Init) refers to board.o(.text.Board_PinMode) for Board_PinMode
+    links.o(.text.Links_Init) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    links.o(.text.Links_Init) refers to board.o(.text.Board_EnableIrq) for Board_EnableIrq
+    links.o(.ARM.exidx.text.Links_Init) refers to links.o(.text.Links_Init) for [Anonymous Symbol]
+    links.o(.text.Links_InputByte) refers to links.o(.bss.receivers) for receivers
+    links.o(.text.Links_InputByte) refers to board.o(.text.Board_Millis) for Board_Millis
+    links.o(.text.Links_InputByte) refers to board.o(.text.Board_SerialError) for Board_SerialError
+    links.o(.text.Links_InputByte) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    links.o(.ARM.exidx.text.Links_InputByte) refers to links.o(.text.Links_InputByte) for [Anonymous Symbol]
+    links.o(.text.Links_InputUsbReport) refers to board.o(.text.Board_Millis) for Board_Millis
+    links.o(.text.Links_InputUsbReport) refers to links.o(.bss.receivers) for receivers
+    links.o(.text.Links_InputUsbReport) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    links.o(.ARM.exidx.text.Links_InputUsbReport) refers to links.o(.text.Links_InputUsbReport) for [Anonymous Symbol]
+    links.o(.text.Links_ResetUsb) refers to links.o(.bss.receivers) for receivers
+    links.o(.ARM.exidx.text.Links_ResetUsb) refers to links.o(.text.Links_ResetUsb) for [Anonymous Symbol]
+    links.o(.text.Links_CheckReceiveTimeouts) refers to links.o(.bss.receivers) for receivers
+    links.o(.text.Links_CheckReceiveTimeouts) refers to board.o(.text.Board_SerialError) for Board_SerialError
+    links.o(.ARM.exidx.text.Links_CheckReceiveTimeouts) refers to links.o(.text.Links_CheckReceiveTimeouts) for [Anonymous Symbol]
+    links.o(.text.Links_TakeFrame) refers to links.o(.bss.receivers) for receivers
+    links.o(.text.Links_TakeFrame) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    links.o(.ARM.exidx.text.Links_TakeFrame) refers to links.o(.text.Links_TakeFrame) for [Anonymous Symbol]
+    links.o(.text.Links_Send) refers to usb_hid.o(.text.Usb_Write) for Usb_Write
+    links.o(.ARM.exidx.text.Links_Send) refers to links.o(.text.Links_Send) for [Anonymous Symbol]
+    links.o(.text.UART1_IRQHandler) refers to links.o(.text.Links_InputByte) for Links_InputByte
+    links.o(.ARM.exidx.text.UART1_IRQHandler) refers to links.o(.text.UART1_IRQHandler) for [Anonymous Symbol]
+    links.o(.text.UART3_IRQHandler) refers to links.o(.text.Links_InputByte) for Links_InputByte
+    links.o(.ARM.exidx.text.UART3_IRQHandler) refers to links.o(.text.UART3_IRQHandler) for [Anonymous Symbol]
+    links.o(.text.SPI2_IRQHandler) refers to links.o(.text.Links_InputByte) for Links_InputByte
+    links.o(.ARM.exidx.text.SPI2_IRQHandler) refers to links.o(.text.SPI2_IRQHandler) for [Anonymous Symbol]
+    links.o(.text.UART2_IRQHandler) refers to links.o(.bss.servo_done) for servo_done
+    links.o(.text.UART2_IRQHandler) refers to links.o(.bss.servo_used) for servo_used
+    links.o(.text.UART2_IRQHandler) refers to links.o(.bss.servo_bytes) for servo_bytes
+    links.o(.text.UART2_IRQHandler) refers to links.o(.bss.servo_size) for servo_size
+    links.o(.ARM.exidx.text.UART2_IRQHandler) refers to links.o(.text.UART2_IRQHandler) for [Anonymous Symbol]
+    links.o(.text.Servo_Send) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    links.o(.text.Servo_Send) refers to board.o(.text.Board_PinWrite) for Board_PinWrite
+    links.o(.ARM.exidx.text.Servo_Send) refers to links.o(.text.Servo_Send) for [Anonymous Symbol]
+    links.o(.text.Servo_Set) refers to links.o(.text.Servo_Send) for Servo_Send
+    links.o(.ARM.exidx.text.Servo_Set) refers to links.o(.text.Servo_Set) for [Anonymous Symbol]
+    links.o(.text.Servo_Read) refers to links.o(.bss.servo_done) for servo_done
+    links.o(.text.Servo_Read) refers to links.o(.bss.servo_size) for servo_size
+    links.o(.text.Servo_Read) refers to links.o(.bss.servo_bytes) for servo_bytes
+    links.o(.text.Servo_Read) refers to links.o(.bss.servo_used) for servo_used
+    links.o(.text.Servo_Read) refers to links.o(.text.Servo_Send) for Servo_Send
+    links.o(.text.Servo_Read) refers to board.o(.text.Board_Millis) for Board_Millis
+    links.o(.ARM.exidx.text.Servo_Read) refers to links.o(.text.Servo_Read) for [Anonymous Symbol]
+    usb_hid.o(.text.Usb_Init) refers to links.o(.text.Links_ResetUsb) for Links_ResetUsb
+    usb_hid.o(.text.Usb_Init) refers to usb_hid.o(.bss.configured) for configured
+    usb_hid.o(.text.Usb_Init) refers to usb_hid.o(.bss.address_pending) for address_pending
+    usb_hid.o(.text.Usb_Init) refers to usb_hid.o(.bss.output_report) for output_report
+    usb_hid.o(.text.Usb_Init) refers to usb_hid.o(.bss.protocol) for protocol
+    usb_hid.o(.text.Usb_Init) refers to usb_hid.o(.bss.idle) for idle
+    usb_hid.o(.text.Usb_Init) refers to board.o(.text.Board_EnableIrq) for Board_EnableIrq
+    usb_hid.o(.ARM.exidx.text.Usb_Init) refers to usb_hid.o(.text.Usb_Init) for [Anonymous Symbol]
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.bss.output_report) for output_report
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.text.receive_report) for receive_report
+    usb_hid.o(.text.USB_IRQHandler) refers to links.o(.text.Links_ResetUsb) for Links_ResetUsb
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.bss.configured) for configured
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.bss.address_pending) for address_pending
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.bss.protocol) for protocol
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.bss.idle) for idle
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.bss.address) for address
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.rodata.configuration) for configuration
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.rodata.maker) for maker
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.rodata.product) for product
+    usb_hid.o(.text.USB_IRQHandler) refers to usb_hid.o(.rodata.cst32) for serial
+    usb_hid.o(.ARM.exidx.text.USB_IRQHandler) refers to usb_hid.o(.text.USB_IRQHandler) for [Anonymous Symbol]
+    usb_hid.o(.text.receive_report) refers to links.o(.text.Links_InputUsbReport) for Links_InputUsbReport
+    usb_hid.o(.ARM.exidx.text.receive_report) refers to usb_hid.o(.text.receive_report) for [Anonymous Symbol]
+    usb_hid.o(.text.Usb_Write) refers to usb_hid.o(.bss.configured) for configured
+    usb_hid.o(.text.Usb_Write) refers to board.o(.text.Board_Millis) for Board_Millis
+    usb_hid.o(.ARM.exidx.text.Usb_Write) refers to usb_hid.o(.text.Usb_Write) for [Anonymous Symbol]
+    actions.o(.text.Actions_Init) refers to actions.o(.bss.speed) for speed
+    actions.o(.text.Actions_Init) refers to flash.o(.text.Flash_Read) for Flash_Read
+    actions.o(.text.Actions_Init) refers to actions.o(.rodata.str1.1) for .L.str
+    actions.o(.text.Actions_Init) refers to memcmp.o(.text) for memcmp
+    actions.o(.text.Actions_Init) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    actions.o(.text.Actions_Init) refers to actions.o(.bss.valid) for valid
+    actions.o(.text.Actions_Init) refers to flash.o(.text.Flash_Write) for Flash_Write
+    actions.o(.ARM.exidx.text.Actions_Init) refers to actions.o(.text.Actions_Init) for [Anonymous Symbol]
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.valid) for valid
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.running) for running
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.running_bank) for running_bank
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.remaining) for remaining
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.requested_repeats) for requested_repeats
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.tracks) for tracks
+    actions.o(.text.Actions_Play) refers to flash.o(.text.Flash_Read) for Flash_Read
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.sequence_size) for sequence_size
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.sequence) for sequence
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.frame_index) for frame_index
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.sequence_index) for sequence_index
+    actions.o(.text.Actions_Play) refers to board.o(.text.Board_Millis) for Board_Millis
+    actions.o(.text.Actions_Play) refers to actions.o(.bss.due) for due
+    actions.o(.text.Actions_Play) refers to actions.o(.text.notify_serial) for notify_serial
+    actions.o(.ARM.exidx.text.Actions_Play) refers to actions.o(.text.Actions_Play) for [Anonymous Symbol]
+    actions.o(.text.notify_serial) refers to links.o(.text.Links_Send) for Links_Send
+    actions.o(.ARM.exidx.text.notify_serial) refers to actions.o(.text.notify_serial) for [Anonymous Symbol]
+    actions.o(.text.Actions_Stop) refers to actions.o(.bss.running) for running
+    actions.o(.ARM.exidx.text.Actions_Stop) refers to actions.o(.text.Actions_Stop) for [Anonymous Symbol]
+    actions.o(.text.Actions_SetSpeed) refers to actions.o(.bss.speed) for speed
+    actions.o(.ARM.exidx.text.Actions_SetSpeed) refers to actions.o(.text.Actions_SetSpeed) for [Anonymous Symbol]
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.running) for running
+    actions.o(.text.Actions_Service) refers to board.o(.text.Board_Millis) for Board_Millis
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.due) for due
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.sequence_size) for sequence_size
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.sequence_index) for sequence_index
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.frame_index) for frame_index
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.sequence) for sequence
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.tracks) for tracks
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.remaining) for remaining
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.running_bank) for running_bank
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.requested_repeats) for requested_repeats
+    actions.o(.text.Actions_Service) refers to links.o(.text.Links_Send) for Links_Send
+    actions.o(.text.Actions_Service) refers to flash.o(.text.Flash_Read) for Flash_Read
+    actions.o(.text.Actions_Service) refers to actions.o(.bss.speed) for speed
+    actions.o(.text.Actions_Service) refers to links.o(.text.Servo_Set) for Servo_Set
+    actions.o(.ARM.exidx.text.Actions_Service) refers to actions.o(.text.Actions_Service) for [Anonymous Symbol]
+    actions.o(.text.Actions_Delete) refers to actions.o(.bss.running) for running
+    actions.o(.text.Actions_Delete) refers to actions.o(.bss.running_bank) for running_bank
+    actions.o(.text.Actions_Delete) refers to actions.o(.bss.speed) for speed
+    actions.o(.text.Actions_Delete) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    actions.o(.text.Actions_Delete) refers to flash.o(.text.Flash_Write) for Flash_Write
+    actions.o(.text.Actions_Delete) refers to actions.o(.bss.valid) for valid
+    actions.o(.ARM.exidx.text.Actions_Delete) refers to actions.o(.text.Actions_Delete) for [Anonymous Symbol]
+    actions.o(.text.set_valid) refers to flash.o(.text.Flash_Write) for Flash_Write
+    actions.o(.text.set_valid) refers to actions.o(.bss.valid) for valid
+    actions.o(.ARM.exidx.text.set_valid) refers to actions.o(.text.set_valid) for [Anonymous Symbol]
+    actions.o(.text.Actions_WriteRecord) refers to flash.o(.text.Flash_Read) for Flash_Read
+    actions.o(.text.Actions_WriteRecord) refers to actions.o(.rodata.str1.1) for .L.str
+    actions.o(.text.Actions_WriteRecord) refers to memcmp.o(.text) for memcmp
+    actions.o(.text.Actions_WriteRecord) refers to flash.o(.text.Flash_Write) for Flash_Write
+    actions.o(.text.Actions_WriteRecord) refers to flash.o(.text.Flash_EraseSector) for Flash_EraseSector
+    actions.o(.text.Actions_WriteRecord) refers to actions.o(.bss.speed) for speed
+    actions.o(.text.Actions_WriteRecord) refers to actions.o(.text.set_valid) for set_valid
+    actions.o(.ARM.exidx.text.Actions_WriteRecord) refers to actions.o(.text.Actions_WriteRecord) for [Anonymous Symbol]
+    actions.o(.text.Actions_Upload) refers to actions.o(.bss.upload_tracks) for upload_tracks
+    actions.o(.text.Actions_Upload) refers to actions.o(.bss.upload_ready) for upload_ready
+    actions.o(.text.Actions_Upload) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    actions.o(.text.Actions_Upload) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    actions.o(.text.Actions_Upload) refers to actions.o(.bss.upload_bank) for upload_bank
+    actions.o(.text.Actions_Upload) refers to rt_memclr.o(.text) for __aeabi_memclr
+    actions.o(.text.Actions_Upload) refers to flash.o(.text.Flash_Write) for Flash_Write
+    actions.o(.text.Actions_Upload) refers to actions.o(.bss.running) for running
+    actions.o(.text.Actions_Upload) refers to actions.o(.bss.running_bank) for running_bank
+    actions.o(.text.Actions_Upload) refers to flash.o(.text.Flash_Read) for Flash_Read
+    actions.o(.text.Actions_Upload) refers to actions.o(.rodata.str1.1) for .L.str
+    actions.o(.text.Actions_Upload) refers to memcmp.o(.text) for memcmp
+    actions.o(.text.Actions_Upload) refers to actions.o(.bss.valid) for valid
+    actions.o(.text.Actions_Upload) refers to flash.o(.text.Flash_EraseSector) for Flash_EraseSector
+    actions.o(.text.Actions_Upload) refers to actions.o(.text.set_valid) for set_valid
+    actions.o(.text.Actions_Upload) refers to actions.o(.bss.speed) for speed
+    actions.o(.text.Actions_Upload) refers to board.o(.text.Board_Beep) for Board_Beep
+    actions.o(.ARM.exidx.text.Actions_Upload) refers to actions.o(.text.Actions_Upload) for [Anonymous Symbol]
+    controller.o(.text.Controller_Command) refers to controller.o(.bss.teaching) for teaching
+    controller.o(.text.Controller_Command) refers to board.o(.text.Board_FlashLed) for Board_FlashLed
+    controller.o(.text.Controller_Command) refers to links.o(.text.Servo_Set) for Servo_Set
+    controller.o(.text.Controller_Command) refers to controller.o(.text.query_list) for query_list
+    controller.o(.text.Controller_Command) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    controller.o(.text.Controller_Command) refers to actions.o(.text.Actions_Upload) for Actions_Upload
+    controller.o(.text.Controller_Command) refers to actions.o(.text.Actions_Play) for Actions_Play
+    controller.o(.text.Controller_Command) refers to actions.o(.text.Actions_Stop) for Actions_Stop
+    controller.o(.text.Controller_Command) refers to links.o(.text.Links_Send) for Links_Send
+    controller.o(.text.Controller_Command) refers to actions.o(.text.Actions_Delete) for Actions_Delete
+    controller.o(.text.Controller_Command) refers to actions.o(.text.Actions_SetSpeed) for Actions_SetSpeed
+    controller.o(.text.Controller_Command) refers to board.o(.text.Board_Battery) for Board_Battery
+    controller.o(.text.Controller_Command) refers to actions.o(.text.Actions_WriteRecord) for Actions_WriteRecord
+    controller.o(.text.Controller_Command) refers to controller.o(.text.write_configuration) for write_configuration
+    controller.o(.text.Controller_Command) refers to controller.o(.text.read_configuration) for read_configuration
+    controller.o(.ARM.exidx.text.Controller_Command) refers to controller.o(.text.Controller_Command) for [Anonymous Symbol]
+    controller.o(.text.query_list) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    controller.o(.text.query_list) refers to links.o(.text.Servo_Read) for Servo_Read
+    controller.o(.text.query_list) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    controller.o(.text.query_list) refers to links.o(.text.Links_Send) for Links_Send
+    controller.o(.ARM.exidx.text.query_list) refers to controller.o(.text.query_list) for [Anonymous Symbol]
+    controller.o(.text.write_configuration) refers to links.o(.text.Servo_Set) for Servo_Set
+    controller.o(.text.write_configuration) refers to board.o(.text.Board_Delay) for Board_Delay
+    controller.o(.ARM.exidx.text.write_configuration) refers to controller.o(.text.write_configuration) for [Anonymous Symbol]
+    controller.o(.text.read_configuration) refers to links.o(.text.Servo_Read) for Servo_Read
+    controller.o(.text.read_configuration) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    controller.o(.text.read_configuration) refers to links.o(.text.Links_Send) for Links_Send
+    controller.o(.ARM.exidx.text.read_configuration) refers to controller.o(.text.read_configuration) for [Anonymous Symbol]
+    controller.o(.text.Controller_Service) refers to links.o(.text.Links_TakeFrame) for Links_TakeFrame
+    controller.o(.text.Controller_Service) refers to controller.o(.text.Controller_Command) for Controller_Command
+    controller.o(.text.Controller_Service) refers to board.o(.text.Board_Millis) for Board_Millis
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.teaching) for teaching
+    controller.o(.text.Controller_Service) refers to board.o(.text.Board_FlashLed) for Board_FlashLed
+    controller.o(.text.Controller_Service) refers to actions.o(.text.Actions_Play) for Actions_Play
+    controller.o(.text.Controller_Service) refers to links.o(.text.Servo_Read) for Servo_Read
+    controller.o(.text.Controller_Service) refers to links.o(.text.Servo_Set) for Servo_Set
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.pad_buttons) for pad_buttons
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.last_pad) for last_pad
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.pad_poll) for pad_poll
+    controller.o(.text.Controller_Service) refers to controller.o(.rodata.pad_key.keys) for pad_key.keys
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.last_key) for last_key
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.pad_hold) for pad_hold
+    controller.o(.text.Controller_Service) refers to controller.o(.text.run_pad_key) for run_pad_key
+    controller.o(.text.Controller_Service) refers to board.o(.text.Board_PinRead) for Board_PinRead
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.run_was_down) for run_was_down
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.run_pressed) for run_pressed
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.run_held) for run_held
+    controller.o(.text.Controller_Service) refers to actions.o(.text.Actions_Stop) for Actions_Stop
+    controller.o(.text.Controller_Service) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    controller.o(.text.Controller_Service) refers to links.o(.text.Links_Send) for Links_Send
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.program_was_down) for program_was_down
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.program_pressed) for program_pressed
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.program_held) for program_held
+    controller.o(.text.Controller_Service) refers to controller.o(.bss.taught_frames) for taught_frames
+    controller.o(.text.Controller_Service) refers to board.o(.text.Board_Beep) for Board_Beep
+    controller.o(.text.Controller_Service) refers to actions.o(.text.Actions_WriteRecord) for Actions_WriteRecord
+    controller.o(.text.Controller_Service) refers to board.o(.text.Board_SetLedIdleLevel) for Board_SetLedIdleLevel
+    controller.o(.ARM.exidx.text.Controller_Service) refers to controller.o(.text.Controller_Service) for [Anonymous Symbol]
+    controller.o(.text.run_pad_key) refers to controller.o(.data.mode) for mode
+    controller.o(.text.run_pad_key) refers to actions.o(.text.Actions_Stop) for Actions_Stop
+    controller.o(.text.run_pad_key) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    controller.o(.text.run_pad_key) refers to links.o(.text.Links_Send) for Links_Send
+    controller.o(.text.run_pad_key) refers to actions.o(.text.Actions_Play) for Actions_Play
+    controller.o(.text.run_pad_key) refers to controller.o(.data.pad_step) for pad_step
+    controller.o(.text.run_pad_key) refers to board.o(.text.Board_Beep) for Board_Beep
+    controller.o(.text.run_pad_key) refers to links.o(.text.Servo_Read) for Servo_Read
+    controller.o(.text.run_pad_key) refers to links.o(.text.Servo_Set) for Servo_Set
+    controller.o(.ARM.exidx.text.run_pad_key) refers to controller.o(.text.run_pad_key) for [Anonymous Symbol]
+    rt_memcpy_v6.o(.text) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    rt_memclr.o(.text) refers to rt_memclr_w.o(.text) for _memset_w
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry7.o(.ARM.Collect$$rtentry$$00000007) for __rt_entry_sh
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(.text.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    __rtentry7.o(.ARM.Collect$$rtentry$$00000007) refers to __rtentry7.o(.ARM.Collect$$rtentry$$00002718) for __lit__00000000
+    __rtentry7.o(__vectab_stack_and_reset_2_area) refers to __main.o(!!!main) for __main
+    __rtentry7.o(.ARM.exidx) refers to __rtentry7.o(.ARM.Collect$$rtentry$$00000007) for .ARM.Collect$$rtentry$$00000007
+    __rtentry7.o(.ARM.exidx) refers to __rtentry7.o(.ARM.Collect$$rtentry$$00002718) for .ARM.Collect$$rtentry$$00002718
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to sys_stackheap.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000034) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000006) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000010) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_relocate_pie_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000035) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000027) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    sys_stackheap.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_stackheap.o(.text) refers to use_no_semi.o(.text) for __I$use$semihosting
+    sys_stackheap_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_stackheap_hlt.o(.text) refers to use_no_semi.o(.text) for __I$use$semihosting
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$0000001A) refers to libinit2.o(.ARM.Collect$$libinit$$00000011) for .ARM.Collect$$libinit$$00000011
+    libinit2.o(.ARM.Collect$$libinit$$00000028) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000029) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_exit_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_command_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_wrch_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing board.o(.text), (0 bytes).
+    Removing board.o(.ARM.exidx.text.Board_EnableIrq), (8 bytes).
+    Removing board.o(.text.Board_DisableIrq), (26 bytes).
+    Removing board.o(.ARM.exidx.text.Board_DisableIrq), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_PinMode), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_PinWrite), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_PinRead), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_Init), (8 bytes).
+    Removing board.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_Millis), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_Delay), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_LatchAlarm), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_CheckStartupVoltage), (8 bytes).
+    Removing board.o(.ARM.exidx.text.sample_battery), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_Battery), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_Beep), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_SerialError), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_FlashLed), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_SetLedIdleLevel), (8 bytes).
+    Removing board.o(.ARM.exidx.text.TIM2_IRQHandler), (8 bytes).
+    Removing board.o(.ARM.exidx.text.Board_Service), (8 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing startup_mm32f103.o(.text), (0 bytes).
+    Removing startup_mm32f103.o(.ARM.exidx.text.Reset_Handler), (8 bytes).
+    Removing startup_mm32f103.o(.ARM.exidx.text.Default_Handler), (8 bytes).
+    Removing flash.o(.text), (0 bytes).
+    Removing flash.o(.ARM.exidx.text.Flash_Init), (8 bytes).
+    Removing flash.o(.ARM.exidx.text.address_command), (8 bytes).
+    Removing flash.o(.ARM.exidx.text.Flash_Read), (8 bytes).
+    Removing flash.o(.ARM.exidx.text.Flash_EraseSector), (8 bytes).
+    Removing flash.o(.ARM.exidx.text.wait_ready), (8 bytes).
+    Removing flash.o(.ARM.exidx.text.Flash_Write), (8 bytes).
+    Removing flash.o(.ARM.exidx.text.program), (8 bytes).
+    Removing links.o(.text), (0 bytes).
+    Removing links.o(.ARM.exidx.text.Links_Init), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Links_InputByte), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Links_InputUsbReport), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Links_ResetUsb), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Links_CheckReceiveTimeouts), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Links_TakeFrame), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Links_Send), (8 bytes).
+    Removing links.o(.ARM.exidx.text.UART1_IRQHandler), (8 bytes).
+    Removing links.o(.ARM.exidx.text.UART3_IRQHandler), (8 bytes).
+    Removing links.o(.ARM.exidx.text.SPI2_IRQHandler), (8 bytes).
+    Removing links.o(.ARM.exidx.text.UART2_IRQHandler), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Servo_Send), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Servo_Set), (8 bytes).
+    Removing links.o(.ARM.exidx.text.Servo_Read), (8 bytes).
+    Removing usb_hid.o(.text), (0 bytes).
+    Removing usb_hid.o(.ARM.exidx.text.Usb_Init), (8 bytes).
+    Removing usb_hid.o(.ARM.exidx.text.USB_IRQHandler), (8 bytes).
+    Removing usb_hid.o(.ARM.exidx.text.receive_report), (8 bytes).
+    Removing usb_hid.o(.ARM.exidx.text.Usb_Write), (8 bytes).
+    Removing actions.o(.text), (0 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_Init), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_Play), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.notify_serial), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_Stop), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_SetSpeed), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_Service), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_Delete), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.set_valid), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_WriteRecord), (8 bytes).
+    Removing actions.o(.ARM.exidx.text.Actions_Upload), (8 bytes).
+    Removing actions.o(.rodata..L__const.Actions_WriteRecord.single_track), (3 bytes).
+    Removing controller.o(.text), (0 bytes).
+    Removing controller.o(.ARM.exidx.text.Controller_Command), (8 bytes).
+    Removing controller.o(.ARM.exidx.text.query_list), (8 bytes).
+    Removing controller.o(.ARM.exidx.text.write_configuration), (8 bytes).
+    Removing controller.o(.ARM.exidx.text.read_configuration), (8 bytes).
+    Removing controller.o(.ARM.exidx.text.Controller_Service), (8 bytes).
+    Removing controller.o(.ARM.exidx.text.run_pad_key), (8 bytes).
+
+74 unused section(s) (total 537 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry7.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_hlt.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit_hlt.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command_hlt.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch_hlt.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_v6.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_w.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../clib/string.c                         0x00000000   Number         0  memcmp.o ABSOLUTE
+    ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
+    ../fplib/fpinit_empty.s                  0x00000000   Number         0  fpinit_empty.o ABSOLUTE
+    actions.c                                0x00000000   Number         0  actions.o ABSOLUTE
+    board.c                                  0x00000000   Number         0  board.o ABSOLUTE
+    controller.c                             0x00000000   Number         0  controller.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    flash.c                                  0x00000000   Number         0  flash.o ABSOLUTE
+    links.c                                  0x00000000   Number         0  links.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    startup_mm32f103.c                       0x00000000   Number         0  startup_mm32f103.o ABSOLUTE
+    usb_hid.c                                0x00000000   Number         0  usb_hid.o ABSOLUTE
+    __tagsym$$used.0                         0x08000000   Number         0  startup_mm32f103.o(RESET)
+    !!!main                                  0x080000ec   Section        8  __main.o(!!!main)
+    !!!scatter                               0x080000f4   Section       52  __scatter.o(!!!scatter)
+    !!handler_copy                           0x08000128   Section       26  __scatter_copy.o(!!handler_copy)
+    !!handler_zi                             0x08000144   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x08000160   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000002          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    .ARM.Collect$$libinit$$00000004          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$00000006          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000006)
+    .ARM.Collect$$libinit$$0000000C          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000010          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000010)
+    .ARM.Collect$$libinit$$00000013          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$00000027          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000027)
+    .ARM.Collect$$libinit$$0000002E          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000034          0x08000162   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000034)
+    .ARM.Collect$$libinit$$00000035          0x08000162   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000035)
+    .ARM.Collect$$libshutdown$$00000000      0x08000164   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000002      0x08000166   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    .ARM.Collect$$libshutdown$$00000004      0x08000166   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    .ARM.Collect$$libshutdown$$00000007      0x08000166   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    .ARM.Collect$$libshutdown$$0000000A      0x08000166   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    .ARM.Collect$$libshutdown$$0000000C      0x08000166   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    .ARM.Collect$$libshutdown$$0000000F      0x08000166   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$libshutdown$$00000010      0x08000166   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    .ARM.Collect$$rtentry$$00000000          0x08000168   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x08000168   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000007          0x08000168   Section        4  __rtentry7.o(.ARM.Collect$$rtentry$$00000007)
+    .ARM.Collect$$rtentry$$00000009          0x0800016c   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x0800016c   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x08000170   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x08000170   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __lit__00000000                          0x08000178   Data           4  __rtentry7.o(.ARM.Collect$$rtentry$$00002718)
+    .ARM.Collect$$rtentry$$00002718          0x08000178   Section        4  __rtentry7.o(.ARM.Collect$$rtentry$$00002718)
+    .ARM.Collect$$rtexit$$00000000           0x0800017c   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x0800017e   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x0800017e   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x08000182   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .text                                    0x08000188   Section        0  memcmp.o(.text)
+    .text                                    0x080001e0   Section      138  rt_memcpy_v6.o(.text)
+    .text                                    0x0800026a   Section      100  rt_memcpy_w.o(.text)
+    .text                                    0x080002ce   Section       68  rt_memclr.o(.text)
+    .text                                    0x08000312   Section       78  rt_memclr_w.o(.text)
+    .text                                    0x08000360   Section        0  exit.o(.text)
+    .text                                    0x08000372   Section        2  use_no_semi.o(.text)
+    .text                                    0x08000374   Section        0  indicate_semi.o(.text)
+    .text                                    0x08000374   Section        0  sys_exit.o(.text)
+    [Anonymous Symbol]                       0x08000380   Section        0  actions.o(.text.Actions_Delete)
+    [Anonymous Symbol]                       0x08000430   Section        0  actions.o(.text.Actions_Init)
+    [Anonymous Symbol]                       0x080004cc   Section        0  actions.o(.text.Actions_Play)
+    [Anonymous Symbol]                       0x080005ec   Section        0  actions.o(.text.Actions_Service)
+    [Anonymous Symbol]                       0x080007ac   Section        0  actions.o(.text.Actions_SetSpeed)
+    [Anonymous Symbol]                       0x080007e0   Section        0  actions.o(.text.Actions_Stop)
+    [Anonymous Symbol]                       0x080007f0   Section        0  actions.o(.text.Actions_Upload)
+    [Anonymous Symbol]                       0x08000ac0   Section        0  actions.o(.text.Actions_WriteRecord)
+    [Anonymous Symbol]                       0x08000ba0   Section        0  board.o(.text.Board_Battery)
+    [Anonymous Symbol]                       0x08000bac   Section        0  board.o(.text.Board_Beep)
+    [Anonymous Symbol]                       0x08000be0   Section        0  board.o(.text.Board_CheckStartupVoltage)
+    [Anonymous Symbol]                       0x08000c34   Section        0  board.o(.text.Board_Delay)
+    [Anonymous Symbol]                       0x08000c4c   Section        0  board.o(.text.Board_EnableIrq)
+    [Anonymous Symbol]                       0x08000c6c   Section        0  board.o(.text.Board_FlashLed)
+    [Anonymous Symbol]                       0x08000c7c   Section        0  board.o(.text.Board_Init)
+    [Anonymous Symbol]                       0x08000dd8   Section        0  board.o(.text.Board_LatchAlarm)
+    [Anonymous Symbol]                       0x08000dfc   Section        0  board.o(.text.Board_Millis)
+    [Anonymous Symbol]                       0x08000e08   Section        0  board.o(.text.Board_PinMode)
+    [Anonymous Symbol]                       0x08000e2c   Section        0  board.o(.text.Board_PinRead)
+    [Anonymous Symbol]                       0x08000e38   Section        0  board.o(.text.Board_PinWrite)
+    [Anonymous Symbol]                       0x08000e4c   Section        0  board.o(.text.Board_SerialError)
+    [Anonymous Symbol]                       0x08000e6c   Section        0  board.o(.text.Board_Service)
+    [Anonymous Symbol]                       0x08000f5c   Section        0  board.o(.text.Board_SetLedIdleLevel)
+    [Anonymous Symbol]                       0x08000f68   Section        0  controller.o(.text.Controller_Command)
+    [Anonymous Symbol]                       0x080012ac   Section        0  controller.o(.text.Controller_Service)
+    Default_Handler                          0x08001911   Thumb Code     2  startup_mm32f103.o(.text.Default_Handler)
+    [Anonymous Symbol]                       0x08001910   Section        0  startup_mm32f103.o(.text.Default_Handler)
+    [Anonymous Symbol]                       0x08001914   Section        0  flash.o(.text.Flash_EraseSector)
+    [Anonymous Symbol]                       0x08001990   Section        0  flash.o(.text.Flash_Init)
+    [Anonymous Symbol]                       0x08001aec   Section        0  flash.o(.text.Flash_Read)
+    [Anonymous Symbol]                       0x08001b68   Section        0  flash.o(.text.Flash_Write)
+    [Anonymous Symbol]                       0x08001cc4   Section        0  links.o(.text.Links_CheckReceiveTimeouts)
+    [Anonymous Symbol]                       0x08001d40   Section        0  links.o(.text.Links_Init)
+    [Anonymous Symbol]                       0x08001ea4   Section        0  links.o(.text.Links_InputByte)
+    Links_InputByte.limit                    0x08001fac   Number         0  links.o(.text.Links_InputByte)
+    [Anonymous Symbol]                       0x08001fb4   Section        0  links.o(.text.Links_InputUsbReport)
+    [Anonymous Symbol]                       0x08002050   Section        0  links.o(.text.Links_ResetUsb)
+    [Anonymous Symbol]                       0x08002068   Section        0  links.o(.text.Links_Send)
+    [Anonymous Symbol]                       0x080020bc   Section        0  links.o(.text.Links_TakeFrame)
+    [Anonymous Symbol]                       0x080020f8   Section        0  startup_mm32f103.o(.text.Reset_Handler)
+    [Anonymous Symbol]                       0x080020fc   Section        0  links.o(.text.SPI2_IRQHandler)
+    [Anonymous Symbol]                       0x0800211c   Section        0  links.o(.text.Servo_Read)
+    [Anonymous Symbol]                       0x0800222c   Section        0  links.o(.text.Servo_Send)
+    [Anonymous Symbol]                       0x080022f0   Section        0  links.o(.text.Servo_Set)
+    [Anonymous Symbol]                       0x0800233c   Section        0  board.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x080023f0   Section        0  board.o(.text.TIM2_IRQHandler)
+    [Anonymous Symbol]                       0x080025a8   Section        0  links.o(.text.UART1_IRQHandler)
+    [Anonymous Symbol]                       0x080025c8   Section        0  links.o(.text.UART2_IRQHandler)
+    [Anonymous Symbol]                       0x0800264c   Section        0  links.o(.text.UART3_IRQHandler)
+    [Anonymous Symbol]                       0x0800266c   Section        0  usb_hid.o(.text.USB_IRQHandler)
+    setup_request.empty_report               0x08002a84   Number         0  usb_hid.o(.text.USB_IRQHandler)
+    device                                   0x08002ac4   Number         0  usb_hid.o(.text.USB_IRQHandler)
+    report                                   0x08002ad8   Number         0  usb_hid.o(.text.USB_IRQHandler)
+    language                                 0x08002afc   Number         0  usb_hid.o(.text.USB_IRQHandler)
+    [Anonymous Symbol]                       0x08002b00   Section        0  usb_hid.o(.text.Usb_Init)
+    [Anonymous Symbol]                       0x08002bb0   Section        0  usb_hid.o(.text.Usb_Write)
+    address_command                          0x08002c45   Thumb Code   136  flash.o(.text.address_command)
+    [Anonymous Symbol]                       0x08002c44   Section        0  flash.o(.text.address_command)
+    [Anonymous Symbol]                       0x08002ccc   Section        0  main.o(.text.main)
+    notify_serial                            0x08002d09   Thumb Code    64  actions.o(.text.notify_serial)
+    [Anonymous Symbol]                       0x08002d08   Section        0  actions.o(.text.notify_serial)
+    program                                  0x08002d49   Thumb Code   180  flash.o(.text.program)
+    [Anonymous Symbol]                       0x08002d48   Section        0  flash.o(.text.program)
+    query_list                               0x08002dfd   Thumb Code   210  controller.o(.text.query_list)
+    [Anonymous Symbol]                       0x08002dfc   Section        0  controller.o(.text.query_list)
+    read_configuration                       0x08002ed1   Thumb Code   128  controller.o(.text.read_configuration)
+    [Anonymous Symbol]                       0x08002ed0   Section        0  controller.o(.text.read_configuration)
+    read_configuration.commands              0x08002f50   Number         0  controller.o(.text.read_configuration)
+    read_configuration.widths                0x08002f5c   Number         0  controller.o(.text.read_configuration)
+    receive_report                           0x08002f69   Thumb Code    78  usb_hid.o(.text.receive_report)
+    [Anonymous Symbol]                       0x08002f68   Section        0  usb_hid.o(.text.receive_report)
+    run_pad_key                              0x08002fb9   Thumb Code   416  controller.o(.text.run_pad_key)
+    [Anonymous Symbol]                       0x08002fb8   Section        0  controller.o(.text.run_pad_key)
+    run_pad_key.banks                        0x08003158   Number         0  controller.o(.text.run_pad_key)
+    run_pad_key.jog_ids                      0x0800317c   Number         0  controller.o(.text.run_pad_key)
+    sample_battery                           0x08003191   Thumb Code   184  board.o(.text.sample_battery)
+    [Anonymous Symbol]                       0x08003190   Section        0  board.o(.text.sample_battery)
+    set_valid                                0x08003249   Thumb Code    44  actions.o(.text.set_valid)
+    [Anonymous Symbol]                       0x08003248   Section        0  actions.o(.text.set_valid)
+    wait_ready                               0x08003275   Thumb Code   132  flash.o(.text.wait_ready)
+    [Anonymous Symbol]                       0x08003274   Section        0  flash.o(.text.wait_ready)
+    write_configuration                      0x080032f9   Thumb Code   118  controller.o(.text.write_configuration)
+    [Anonymous Symbol]                       0x080032f8   Section        0  controller.o(.text.write_configuration)
+    configuration                            0x0800336e   Data          41  usb_hid.o(.rodata.configuration)
+    [Anonymous Symbol]                       0x0800336e   Section        0  usb_hid.o(.rodata.configuration)
+    serial                                   0x08003397   Data          32  usb_hid.o(.rodata.cst32)
+    [Anonymous Symbol]                       0x08003397   Section        0  usb_hid.o(.rodata.cst32)
+    maker                                    0x080033b7   Data          60  usb_hid.o(.rodata.maker)
+    [Anonymous Symbol]                       0x080033b7   Section        0  usb_hid.o(.rodata.maker)
+    pad_key.keys                             0x080033f4   Data          34  controller.o(.rodata.pad_key.keys)
+    [Anonymous Symbol]                       0x080033f4   Section        0  controller.o(.rodata.pad_key.keys)
+    product                                  0x08003416   Data          33  usb_hid.o(.rodata.product)
+    [Anonymous Symbol]                       0x08003416   Section        0  usb_hid.o(.rodata.product)
+    .L.str                                   0x08003437   Data           6  actions.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08003437   Section        0  actions.o(.rodata.str1.1)
+    mode                                     0x20000000   Data           1  controller.o(.data.mode)
+    [Anonymous Symbol]                       0x20000000   Section        0  controller.o(.data.mode)
+    pad_step                                 0x20000004   Data           4  controller.o(.data.pad_step)
+    [Anonymous Symbol]                       0x20000004   Section        0  controller.o(.data.pad_step)
+    address                                  0x20000008   Data           1  usb_hid.o(.bss.address)
+    [Anonymous Symbol]                       0x20000008   Section        0  usb_hid.o(.bss.address)
+    address_pending                          0x20000009   Data           1  usb_hid.o(.bss.address_pending)
+    [Anonymous Symbol]                       0x20000009   Section        0  usb_hid.o(.bss.address_pending)
+    alarm_latched                            0x2000000a   Data           1  board.o(.bss.alarm_latched)
+    [Anonymous Symbol]                       0x2000000a   Section        0  board.o(.bss.alarm_latched)
+    alarm_latched_at                         0x2000000c   Data           4  board.o(.bss.alarm_latched_at)
+    [Anonymous Symbol]                       0x2000000c   Section        0  board.o(.bss.alarm_latched_at)
+    battery_mv                               0x20000010   Data           2  board.o(.bss.battery_mv)
+    [Anonymous Symbol]                       0x20000010   Section        0  board.o(.bss.battery_mv)
+    beep_age                                 0x20000014   Data           4  board.o(.bss.beep_age)
+    [Anonymous Symbol]                       0x20000014   Section        0  board.o(.bss.beep_age)
+    beep_pattern                             0x20000018   Data           4  board.o(.bss.beep_pattern)
+    [Anonymous Symbol]                       0x20000018   Section        0  board.o(.bss.beep_pattern)
+    buzzer_driven                            0x2000001c   Data           1  board.o(.bss.buzzer_driven)
+    [Anonymous Symbol]                       0x2000001c   Section        0  board.o(.bss.buzzer_driven)
+    configured                               0x2000001d   Data           1  usb_hid.o(.bss.configured)
+    [Anonymous Symbol]                       0x2000001d   Section        0  usb_hid.o(.bss.configured)
+    critical_battery_samples                 0x20000020   Data           4  board.o(.bss.critical_battery_samples)
+    [Anonymous Symbol]                       0x20000020   Section        0  board.o(.bss.critical_battery_samples)
+    due                                      0x20000024   Data           4  actions.o(.bss.due)
+    [Anonymous Symbol]                       0x20000024   Section        0  actions.o(.bss.due)
+    flash_present                            0x20000028   Data           1  flash.o(.bss.flash_present)
+    [Anonymous Symbol]                       0x20000028   Section        0  flash.o(.bss.flash_present)
+    frame_index                              0x2000002a   Data           2  actions.o(.bss.frame_index)
+    [Anonymous Symbol]                       0x2000002a   Section        0  actions.o(.bss.frame_index)
+    idle                                     0x2000002c   Data           1  usb_hid.o(.bss.idle)
+    [Anonymous Symbol]                       0x2000002c   Section        0  usb_hid.o(.bss.idle)
+    last_key                                 0x2000002d   Data           1  controller.o(.bss.last_key)
+    [Anonymous Symbol]                       0x2000002d   Section        0  controller.o(.bss.last_key)
+    last_pad                                 0x20000030   Data           4  controller.o(.bss.last_pad)
+    [Anonymous Symbol]                       0x20000030   Section        0  controller.o(.bss.last_pad)
+    led_flash_requested                      0x20000034   Data           1  board.o(.bss.led_flash_requested)
+    [Anonymous Symbol]                       0x20000034   Section        0  board.o(.bss.led_flash_requested)
+    led_flash_ticks                          0x20000038   Data           4  board.o(.bss.led_flash_ticks)
+    [Anonymous Symbol]                       0x20000038   Section        0  board.o(.bss.led_flash_ticks)
+    led_idle_high                            0x2000003c   Data           1  board.o(.bss.led_idle_high)
+    [Anonymous Symbol]                       0x2000003c   Section        0  board.o(.bss.led_idle_high)
+    low_battery_samples                      0x20000040   Data           4  board.o(.bss.low_battery_samples)
+    [Anonymous Symbol]                       0x20000040   Section        0  board.o(.bss.low_battery_samples)
+    milliseconds                             0x20000044   Data           4  board.o(.bss.milliseconds)
+    [Anonymous Symbol]                       0x20000044   Section        0  board.o(.bss.milliseconds)
+    next_battery_check                       0x20000048   Data           4  board.o(.bss.next_battery_check)
+    [Anonymous Symbol]                       0x20000048   Section        0  board.o(.bss.next_battery_check)
+    output_report                            0x2000004c   Data           1  usb_hid.o(.bss.output_report)
+    [Anonymous Symbol]                       0x2000004c   Section        0  usb_hid.o(.bss.output_report)
+    pad_buttons                              0x2000004e   Data           2  controller.o(.bss.pad_buttons)
+    [Anonymous Symbol]                       0x2000004e   Section        0  controller.o(.bss.pad_buttons)
+    pad_hold                                 0x20000050   Data           2  controller.o(.bss.pad_hold)
+    [Anonymous Symbol]                       0x20000050   Section        0  controller.o(.bss.pad_hold)
+    pad_poll                                 0x20000054   Data           4  controller.o(.bss.pad_poll)
+    [Anonymous Symbol]                       0x20000054   Section        0  controller.o(.bss.pad_poll)
+    program_held                             0x20000058   Data           1  controller.o(.bss.program_held)
+    [Anonymous Symbol]                       0x20000058   Section        0  controller.o(.bss.program_held)
+    program_pressed                          0x2000005c   Data           4  controller.o(.bss.program_pressed)
+    [Anonymous Symbol]                       0x2000005c   Section        0  controller.o(.bss.program_pressed)
+    program_was_down                         0x20000060   Data           1  controller.o(.bss.program_was_down)
+    [Anonymous Symbol]                       0x20000060   Section        0  controller.o(.bss.program_was_down)
+    protocol                                 0x20000061   Data           1  usb_hid.o(.bss.protocol)
+    [Anonymous Symbol]                       0x20000061   Section        0  usb_hid.o(.bss.protocol)
+    receivers                                0x20000064   Data        2176  links.o(.bss.receivers)
+    [Anonymous Symbol]                       0x20000064   Section        0  links.o(.bss.receivers)
+    remaining                                0x200008e4   Data           2  actions.o(.bss.remaining)
+    [Anonymous Symbol]                       0x200008e4   Section        0  actions.o(.bss.remaining)
+    requested_repeats                        0x200008e6   Data           2  actions.o(.bss.requested_repeats)
+    [Anonymous Symbol]                       0x200008e6   Section        0  actions.o(.bss.requested_repeats)
+    run_held                                 0x200008e8   Data           1  controller.o(.bss.run_held)
+    [Anonymous Symbol]                       0x200008e8   Section        0  controller.o(.bss.run_held)
+    run_pressed                              0x200008ec   Data           4  controller.o(.bss.run_pressed)
+    [Anonymous Symbol]                       0x200008ec   Section        0  controller.o(.bss.run_pressed)
+    run_was_down                             0x200008f0   Data           1  controller.o(.bss.run_was_down)
+    [Anonymous Symbol]                       0x200008f0   Section        0  controller.o(.bss.run_was_down)
+    running                                  0x200008f1   Data           1  actions.o(.bss.running)
+    [Anonymous Symbol]                       0x200008f1   Section        0  actions.o(.bss.running)
+    running_bank                             0x200008f2   Data           1  actions.o(.bss.running_bank)
+    [Anonymous Symbol]                       0x200008f2   Section        0  actions.o(.bss.running_bank)
+    sector                                   0x200008f3   Data        4096  flash.o(.bss.sector)
+    [Anonymous Symbol]                       0x200008f3   Section        0  flash.o(.bss.sector)
+    sequence                                 0x200018f3   Data        1024  actions.o(.bss.sequence)
+    [Anonymous Symbol]                       0x200018f3   Section        0  actions.o(.bss.sequence)
+    sequence_index                           0x20001cf4   Data           2  actions.o(.bss.sequence_index)
+    [Anonymous Symbol]                       0x20001cf4   Section        0  actions.o(.bss.sequence_index)
+    sequence_size                            0x20001cf6   Data           2  actions.o(.bss.sequence_size)
+    [Anonymous Symbol]                       0x20001cf6   Section        0  actions.o(.bss.sequence_size)
+    serial_error_pending                     0x20001cf8   Data           1  board.o(.bss.serial_error_pending)
+    [Anonymous Symbol]                       0x20001cf8   Section        0  board.o(.bss.serial_error_pending)
+    servo_bytes                              0x20001cf9   Data          32  links.o(.bss.servo_bytes)
+    [Anonymous Symbol]                       0x20001cf9   Section        0  links.o(.bss.servo_bytes)
+    servo_done                               0x20001d19   Data           1  links.o(.bss.servo_done)
+    [Anonymous Symbol]                       0x20001d19   Section        0  links.o(.bss.servo_done)
+    servo_size                               0x20001d1a   Data           1  links.o(.bss.servo_size)
+    [Anonymous Symbol]                       0x20001d1a   Section        0  links.o(.bss.servo_size)
+    servo_used                               0x20001d1c   Data           4  links.o(.bss.servo_used)
+    [Anonymous Symbol]                       0x20001d1c   Section        0  links.o(.bss.servo_used)
+    speed                                    0x20001d20   Data         512  actions.o(.bss.speed)
+    [Anonymous Symbol]                       0x20001d20   Section        0  actions.o(.bss.speed)
+    taught_frames                            0x20001f20   Data           1  controller.o(.bss.taught_frames)
+    [Anonymous Symbol]                       0x20001f20   Section        0  controller.o(.bss.taught_frames)
+    teaching                                 0x20001f21   Data           1  controller.o(.bss.teaching)
+    [Anonymous Symbol]                       0x20001f21   Section        0  controller.o(.bss.teaching)
+    tracks                                   0x20001f22   Data         256  actions.o(.bss.tracks)
+    [Anonymous Symbol]                       0x20001f22   Section        0  actions.o(.bss.tracks)
+    upload_bank                              0x20002022   Data           1  actions.o(.bss.upload_bank)
+    [Anonymous Symbol]                       0x20002022   Section        0  actions.o(.bss.upload_bank)
+    upload_ready                             0x20002023   Data           1  actions.o(.bss.upload_ready)
+    [Anonymous Symbol]                       0x20002023   Section        0  actions.o(.bss.upload_ready)
+    upload_tracks                            0x20002024   Data         256  actions.o(.bss.upload_tracks)
+    [Anonymous Symbol]                       0x20002024   Section        0  actions.o(.bss.upload_tracks)
+    valid                                    0x20002124   Data         256  actions.o(.bss.valid)
+    [Anonymous Symbol]                       0x20002124   Section        0  actions.o(.bss.valid)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __fp_init_empty                          0x00000000   Number         0  fpinit_empty.o ABSOLUTE
+    Image$$ZI$$Limit                          - Undefined Weak Reference
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __arm_relocate_pie_                       - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    vectors                                  0x08000000   Data         236  startup_mm32f103.o(RESET)
+    __main                                   0x080000ed   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x080000f5   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x080000f5   Thumb Code    44  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x080000f5   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x08000103   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_copy                       0x08000129   Thumb Code    26  __scatter_copy.o(!!handler_copy)
+    __scatterload_zeroinit                   0x08000145   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x08000161   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_alloca_1                   0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_argv_1                     0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_atexit_1                   0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_clock_1                    0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_cpp_1                      0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000034)
+    __rt_lib_init_exceptions_1               0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_fp_1                       0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    __rt_lib_init_fp_trap_1                  0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_getenv_1                   0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_heap_1                     0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_init_lc_collate_1               0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_ctype_1                 0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_monetary_1              0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_numeric_1               0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_lc_time_1                  0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_preinit_1                  0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000006)
+    __rt_lib_init_rand_1                     0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000010)
+    __rt_lib_init_relocate_pie_1             0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_return                     0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000035)
+    __rt_lib_init_signal_1                   0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_stdio_1                    0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000027)
+    __rt_lib_init_user_alloc_1               0x08000163   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_shutdown                        0x08000165   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_cpp_1                  0x08000167   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    __rt_lib_shutdown_fp_trap_1              0x08000167   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    __rt_lib_shutdown_heap_1                 0x08000167   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_return                 0x08000167   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    __rt_lib_shutdown_signal_1               0x08000167   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    __rt_lib_shutdown_stdio_1                0x08000167   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    __rt_lib_shutdown_user_alloc_1           0x08000167   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    __rt_entry                               0x08000169   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x08000169   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x08000169   Thumb Code     0  __rtentry7.o(.ARM.Collect$$rtentry$$00000007)
+    __rt_entry_li                            0x0800016d   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x0800016d   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x08000171   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x08000171   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x0800017d   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x0800017f   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x0800017f   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x08000183   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    memcmp                                   0x08000189   Thumb Code    88  memcmp.o(.text)
+    __aeabi_memcpy                           0x080001e1   Thumb Code     0  rt_memcpy_v6.o(.text)
+    __rt_memcpy                              0x080001e1   Thumb Code   138  rt_memcpy_v6.o(.text)
+    _memcpy_lastbytes                        0x08000247   Thumb Code     0  rt_memcpy_v6.o(.text)
+    __aeabi_memcpy4                          0x0800026b   Thumb Code     0  rt_memcpy_w.o(.text)
+    __aeabi_memcpy8                          0x0800026b   Thumb Code     0  rt_memcpy_w.o(.text)
+    __rt_memcpy_w                            0x0800026b   Thumb Code   100  rt_memcpy_w.o(.text)
+    _memcpy_lastbytes_aligned                0x080002b3   Thumb Code     0  rt_memcpy_w.o(.text)
+    __aeabi_memclr                           0x080002cf   Thumb Code     0  rt_memclr.o(.text)
+    __rt_memclr                              0x080002cf   Thumb Code     0  rt_memclr.o(.text)
+    _memset                                  0x080002d3   Thumb Code    64  rt_memclr.o(.text)
+    __aeabi_memclr4                          0x08000313   Thumb Code     0  rt_memclr_w.o(.text)
+    __aeabi_memclr8                          0x08000313   Thumb Code     0  rt_memclr_w.o(.text)
+    __rt_memclr_w                            0x08000313   Thumb Code     0  rt_memclr_w.o(.text)
+    _memset_w                                0x08000317   Thumb Code    74  rt_memclr_w.o(.text)
+    exit                                     0x08000361   Thumb Code    18  exit.o(.text)
+    __I$use$semihosting                      0x08000373   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x08000373   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x08000375   Thumb Code     0  indicate_semi.o(.text)
+    _sys_exit                                0x08000375   Thumb Code     8  sys_exit.o(.text)
+    Actions_Delete                           0x08000381   Thumb Code   176  actions.o(.text.Actions_Delete)
+    Actions_Init                             0x08000431   Thumb Code   154  actions.o(.text.Actions_Init)
+    Actions_Play                             0x080004cd   Thumb Code   286  actions.o(.text.Actions_Play)
+    Actions_Service                          0x080005ed   Thumb Code   448  actions.o(.text.Actions_Service)
+    Actions_SetSpeed                         0x080007ad   Thumb Code    50  actions.o(.text.Actions_SetSpeed)
+    Actions_Stop                             0x080007e1   Thumb Code    14  actions.o(.text.Actions_Stop)
+    Actions_Upload                           0x080007f1   Thumb Code   720  actions.o(.text.Actions_Upload)
+    Actions_WriteRecord                      0x08000ac1   Thumb Code   224  actions.o(.text.Actions_WriteRecord)
+    Board_Battery                            0x08000ba1   Thumb Code    12  board.o(.text.Board_Battery)
+    Board_Beep                               0x08000bad   Thumb Code    50  board.o(.text.Board_Beep)
+    Board_CheckStartupVoltage                0x08000be1   Thumb Code    84  board.o(.text.Board_CheckStartupVoltage)
+    Board_Delay                              0x08000c35   Thumb Code    22  board.o(.text.Board_Delay)
+    Board_EnableIrq                          0x08000c4d   Thumb Code    32  board.o(.text.Board_EnableIrq)
+    Board_FlashLed                           0x08000c6d   Thumb Code    14  board.o(.text.Board_FlashLed)
+    Board_Init                               0x08000c7d   Thumb Code   346  board.o(.text.Board_Init)
+    Board_LatchAlarm                         0x08000dd9   Thumb Code    36  board.o(.text.Board_LatchAlarm)
+    Board_Millis                             0x08000dfd   Thumb Code    12  board.o(.text.Board_Millis)
+    Board_PinMode                            0x08000e09   Thumb Code    34  board.o(.text.Board_PinMode)
+    Board_PinRead                            0x08000e2d   Thumb Code    10  board.o(.text.Board_PinRead)
+    Board_PinWrite                           0x08000e39   Thumb Code    18  board.o(.text.Board_PinWrite)
+    Board_SerialError                        0x08000e4d   Thumb Code    32  board.o(.text.Board_SerialError)
+    Board_Service                            0x08000e6d   Thumb Code   240  board.o(.text.Board_Service)
+    Board_SetLedIdleLevel                    0x08000f5d   Thumb Code    12  board.o(.text.Board_SetLedIdleLevel)
+    Controller_Command                       0x08000f69   Thumb Code   836  controller.o(.text.Controller_Command)
+    Controller_Service                       0x080012ad   Thumb Code  1636  controller.o(.text.Controller_Service)
+    Flash_EraseSector                        0x08001915   Thumb Code   124  flash.o(.text.Flash_EraseSector)
+    Flash_Init                               0x08001991   Thumb Code   346  flash.o(.text.Flash_Init)
+    Flash_Read                               0x08001aed   Thumb Code   124  flash.o(.text.Flash_Read)
+    Flash_Write                              0x08001b69   Thumb Code   346  flash.o(.text.Flash_Write)
+    Links_CheckReceiveTimeouts               0x08001cc5   Thumb Code   122  links.o(.text.Links_CheckReceiveTimeouts)
+    Links_Init                               0x08001d41   Thumb Code   356  links.o(.text.Links_Init)
+    Links_InputByte                          0x08001ea5   Thumb Code   264  links.o(.text.Links_InputByte)
+    Links_InputUsbReport                     0x08001fb5   Thumb Code   156  links.o(.text.Links_InputUsbReport)
+    Links_ResetUsb                           0x08002051   Thumb Code    22  links.o(.text.Links_ResetUsb)
+    Links_Send                               0x08002069   Thumb Code    84  links.o(.text.Links_Send)
+    Links_TakeFrame                          0x080020bd   Thumb Code    58  links.o(.text.Links_TakeFrame)
+    Reset_Handler                            0x080020f9   Thumb Code     4  startup_mm32f103.o(.text.Reset_Handler)
+    SPI2_IRQHandler                          0x080020fd   Thumb Code    30  links.o(.text.SPI2_IRQHandler)
+    Servo_Read                               0x0800211d   Thumb Code   272  links.o(.text.Servo_Read)
+    Servo_Send                               0x0800222d   Thumb Code   196  links.o(.text.Servo_Send)
+    Servo_Set                                0x080022f1   Thumb Code    74  links.o(.text.Servo_Set)
+    SysTick_Handler                          0x0800233d   Thumb Code   178  board.o(.text.SysTick_Handler)
+    TIM2_IRQHandler                          0x080023f1   Thumb Code   438  board.o(.text.TIM2_IRQHandler)
+    UART1_IRQHandler                         0x080025a9   Thumb Code    30  links.o(.text.UART1_IRQHandler)
+    UART2_IRQHandler                         0x080025c9   Thumb Code   132  links.o(.text.UART2_IRQHandler)
+    UART3_IRQHandler                         0x0800264d   Thumb Code    30  links.o(.text.UART3_IRQHandler)
+    USB_IRQHandler                           0x0800266d   Thumb Code  1048  usb_hid.o(.text.USB_IRQHandler)
+    Usb_Init                                 0x08002b01   Thumb Code   176  usb_hid.o(.text.Usb_Init)
+    Usb_Write                                0x08002bb1   Thumb Code   148  usb_hid.o(.text.Usb_Write)
+    main                                     0x08002ccd   Thumb Code    58  main.o(.text.main)
+    Region$$Table$$Base                      0x08003440   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003460   Number         0  anon$$obj.o(Region$$Table)
+    Image$$ARM_LIB_STACK$$ZI$$Limit          0x20005000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080020f9
+
+  Load Region LR_FLASH (Base: 0x08000000, Size: 0x00003468, Max: 0x00020000, ABSOLUTE)
+
+    Execution Region ER_FLASH (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003460, Max: 0x00020000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x000000ec   Data   RO           76    RESET               startup_mm32f103.o
+    0x080000ec   0x080000ec   0x00000008   Code   RO          267  * !!!main             c_w.l(__main.o)
+    0x080000f4   0x080000f4   0x00000034   Code   RO          441    !!!scatter          c_w.l(__scatter.o)
+    0x08000128   0x08000128   0x0000001a   Code   RO          443    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x08000142   0x08000142   0x00000002   PAD
+    0x08000144   0x08000144   0x0000001c   Code   RO          445    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x08000160   0x08000160   0x00000002   Code   RO          299    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          310    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          312    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          314    .ARM.Collect$$libinit$$00000006  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          317    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          319    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          321    .ARM.Collect$$libinit$$00000010  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          324    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          326    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          328    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          330    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          332    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          334    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          336    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          338    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          340    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          342    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          344    .ARM.Collect$$libinit$$00000027  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          348    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          350    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          352    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000000   Code   RO          354    .ARM.Collect$$libinit$$00000034  c_w.l(libinit2.o)
+    0x08000162   0x08000162   0x00000002   Code   RO          355    .ARM.Collect$$libinit$$00000035  c_w.l(libinit2.o)
+    0x08000164   0x08000164   0x00000002   Code   RO          380    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x08000166   0x08000166   0x00000000   Code   RO          392    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x08000166   0x08000166   0x00000000   Code   RO          394    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x08000166   0x08000166   0x00000000   Code   RO          397    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x08000166   0x08000166   0x00000000   Code   RO          400    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x08000166   0x08000166   0x00000000   Code   RO          402    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x08000166   0x08000166   0x00000000   Code   RO          405    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x08000166   0x08000166   0x00000002   Code   RO          406    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x08000168   0x08000168   0x00000000   Code   RO          269    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x08000168   0x08000168   0x00000000   Code   RO          271    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x08000168   0x08000168   0x00000004   Code   RO          285    .ARM.Collect$$rtentry$$00000007  c_w.l(__rtentry7.o)
+    0x0800016c   0x0800016c   0x00000000   Code   RO          273    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x0800016c   0x0800016c   0x00000004   Code   RO          274    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x08000170   0x08000170   0x00000000   Code   RO          276    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x08000170   0x08000170   0x00000008   Code   RO          277    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x08000178   0x08000178   0x00000004   Code   RO          286    .ARM.Collect$$rtentry$$00002718  c_w.l(__rtentry7.o)
+    0x0800017c   0x0800017c   0x00000002   Code   RO          307    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO          360    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x0800017e   0x0800017e   0x00000004   Code   RO          361    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x08000182   0x08000182   0x00000006   Code   RO          362    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x08000188   0x08000188   0x00000058   Code   RO          257    .text               c_w.l(memcmp.o)
+    0x080001e0   0x080001e0   0x0000008a   Code   RO          259    .text               c_w.l(rt_memcpy_v6.o)
+    0x0800026a   0x0800026a   0x00000064   Code   RO          261    .text               c_w.l(rt_memcpy_w.o)
+    0x080002ce   0x080002ce   0x00000044   Code   RO          263    .text               c_w.l(rt_memclr.o)
+    0x08000312   0x08000312   0x0000004e   Code   RO          265    .text               c_w.l(rt_memclr_w.o)
+    0x08000360   0x08000360   0x00000012   Code   RO          292    .text               c_w.l(exit.o)
+    0x08000372   0x08000372   0x00000002   Code   RO          356    .text               c_w.l(use_no_semi.o)
+    0x08000374   0x08000374   0x00000000   Code   RO          358    .text               c_w.l(indicate_semi.o)
+    0x08000374   0x08000374   0x0000000c   Code   RO          370    .text               c_w.l(sys_exit.o)
+    0x08000380   0x08000380   0x000000b0   Code   RO          187    .text.Actions_Delete  actions.o
+    0x08000430   0x08000430   0x0000009a   Code   RO          175    .text.Actions_Init  actions.o
+    0x080004ca   0x080004ca   0x00000002   PAD
+    0x080004cc   0x080004cc   0x0000011e   Code   RO          177    .text.Actions_Play  actions.o
+    0x080005ea   0x080005ea   0x00000002   PAD
+    0x080005ec   0x080005ec   0x000001c0   Code   RO          185    .text.Actions_Service  actions.o
+    0x080007ac   0x080007ac   0x00000032   Code   RO          183    .text.Actions_SetSpeed  actions.o
+    0x080007de   0x080007de   0x00000002   PAD
+    0x080007e0   0x080007e0   0x0000000e   Code   RO          181    .text.Actions_Stop  actions.o
+    0x080007ee   0x080007ee   0x00000002   PAD
+    0x080007f0   0x080007f0   0x000002d0   Code   RO          193    .text.Actions_Upload  actions.o
+    0x08000ac0   0x08000ac0   0x000000e0   Code   RO          191    .text.Actions_WriteRecord  actions.o
+    0x08000ba0   0x08000ba0   0x0000000c   Code   RO           27    .text.Board_Battery  board.o
+    0x08000bac   0x08000bac   0x00000032   Code   RO           29    .text.Board_Beep    board.o
+    0x08000bde   0x08000bde   0x00000002   PAD
+    0x08000be0   0x08000be0   0x00000054   Code   RO           23    .text.Board_CheckStartupVoltage  board.o
+    0x08000c34   0x08000c34   0x00000016   Code   RO           19    .text.Board_Delay   board.o
+    0x08000c4a   0x08000c4a   0x00000002   PAD
+    0x08000c4c   0x08000c4c   0x00000020   Code   RO            3    .text.Board_EnableIrq  board.o
+    0x08000c6c   0x08000c6c   0x0000000e   Code   RO           33    .text.Board_FlashLed  board.o
+    0x08000c7a   0x08000c7a   0x00000002   PAD
+    0x08000c7c   0x08000c7c   0x0000015a   Code   RO           13    .text.Board_Init    board.o
+    0x08000dd6   0x08000dd6   0x00000002   PAD
+    0x08000dd8   0x08000dd8   0x00000024   Code   RO           21    .text.Board_LatchAlarm  board.o
+    0x08000dfc   0x08000dfc   0x0000000c   Code   RO           17    .text.Board_Millis  board.o
+    0x08000e08   0x08000e08   0x00000022   Code   RO            7    .text.Board_PinMode  board.o
+    0x08000e2a   0x08000e2a   0x00000002   PAD
+    0x08000e2c   0x08000e2c   0x0000000a   Code   RO           11    .text.Board_PinRead  board.o
+    0x08000e36   0x08000e36   0x00000002   PAD
+    0x08000e38   0x08000e38   0x00000012   Code   RO            9    .text.Board_PinWrite  board.o
+    0x08000e4a   0x08000e4a   0x00000002   PAD
+    0x08000e4c   0x08000e4c   0x00000020   Code   RO           31    .text.Board_SerialError  board.o
+    0x08000e6c   0x08000e6c   0x000000f0   Code   RO           39    .text.Board_Service  board.o
+    0x08000f5c   0x08000f5c   0x0000000c   Code   RO           35    .text.Board_SetLedIdleLevel  board.o
+    0x08000f68   0x08000f68   0x00000344   Code   RO          220    .text.Controller_Command  controller.o
+    0x080012ac   0x080012ac   0x00000664   Code   RO          228    .text.Controller_Service  controller.o
+    0x08001910   0x08001910   0x00000002   Code   RO           74    .text.Default_Handler  startup_mm32f103.o
+    0x08001912   0x08001912   0x00000002   PAD
+    0x08001914   0x08001914   0x0000007c   Code   RO           90    .text.Flash_EraseSector  flash.o
+    0x08001990   0x08001990   0x0000015a   Code   RO           84    .text.Flash_Init    flash.o
+    0x08001aea   0x08001aea   0x00000002   PAD
+    0x08001aec   0x08001aec   0x0000007c   Code   RO           88    .text.Flash_Read    flash.o
+    0x08001b68   0x08001b68   0x0000015a   Code   RO           94    .text.Flash_Write   flash.o
+    0x08001cc2   0x08001cc2   0x00000002   PAD
+    0x08001cc4   0x08001cc4   0x0000007a   Code   RO          116    .text.Links_CheckReceiveTimeouts  links.o
+    0x08001d3e   0x08001d3e   0x00000002   PAD
+    0x08001d40   0x08001d40   0x00000164   Code   RO          108    .text.Links_Init    links.o
+    0x08001ea4   0x08001ea4   0x00000110   Code   RO          110    .text.Links_InputByte  links.o
+    0x08001fb4   0x08001fb4   0x0000009c   Code   RO          112    .text.Links_InputUsbReport  links.o
+    0x08002050   0x08002050   0x00000016   Code   RO          114    .text.Links_ResetUsb  links.o
+    0x08002066   0x08002066   0x00000002   PAD
+    0x08002068   0x08002068   0x00000054   Code   RO          120    .text.Links_Send    links.o
+    0x080020bc   0x080020bc   0x0000003a   Code   RO          118    .text.Links_TakeFrame  links.o
+    0x080020f6   0x080020f6   0x00000002   PAD
+    0x080020f8   0x080020f8   0x00000004   Code   RO           72  * .text.Reset_Handler  startup_mm32f103.o
+    0x080020fc   0x080020fc   0x0000001e   Code   RO          126    .text.SPI2_IRQHandler  links.o
+    0x0800211a   0x0800211a   0x00000002   PAD
+    0x0800211c   0x0800211c   0x00000110   Code   RO          134    .text.Servo_Read    links.o
+    0x0800222c   0x0800222c   0x000000c4   Code   RO          130    .text.Servo_Send    links.o
+    0x080022f0   0x080022f0   0x0000004a   Code   RO          132    .text.Servo_Set     links.o
+    0x0800233a   0x0800233a   0x00000002   PAD
+    0x0800233c   0x0800233c   0x000000b2   Code   RO           15    .text.SysTick_Handler  board.o
+    0x080023ee   0x080023ee   0x00000002   PAD
+    0x080023f0   0x080023f0   0x000001b6   Code   RO           37    .text.TIM2_IRQHandler  board.o
+    0x080025a6   0x080025a6   0x00000002   PAD
+    0x080025a8   0x080025a8   0x0000001e   Code   RO          122    .text.UART1_IRQHandler  links.o
+    0x080025c6   0x080025c6   0x00000002   PAD
+    0x080025c8   0x080025c8   0x00000084   Code   RO          128    .text.UART2_IRQHandler  links.o
+    0x0800264c   0x0800264c   0x0000001e   Code   RO          124    .text.UART3_IRQHandler  links.o
+    0x0800266a   0x0800266a   0x00000002   PAD
+    0x0800266c   0x0800266c   0x00000494   Code   RO          151    .text.USB_IRQHandler  usb_hid.o
+    0x08002b00   0x08002b00   0x000000b0   Code   RO          149    .text.Usb_Init      usb_hid.o
+    0x08002bb0   0x08002bb0   0x00000094   Code   RO          155    .text.Usb_Write     usb_hid.o
+    0x08002c44   0x08002c44   0x00000088   Code   RO           86    .text.address_command  flash.o
+    0x08002ccc   0x08002ccc   0x0000003a   Code   RO           63    .text.main          main.o
+    0x08002d06   0x08002d06   0x00000002   PAD
+    0x08002d08   0x08002d08   0x00000040   Code   RO          179    .text.notify_serial  actions.o
+    0x08002d48   0x08002d48   0x000000b4   Code   RO           96    .text.program       flash.o
+    0x08002dfc   0x08002dfc   0x000000d2   Code   RO          222    .text.query_list    controller.o
+    0x08002ece   0x08002ece   0x00000002   PAD
+    0x08002ed0   0x08002ed0   0x00000098   Code   RO          226    .text.read_configuration  controller.o
+    0x08002f68   0x08002f68   0x0000004e   Code   RO          153    .text.receive_report  usb_hid.o
+    0x08002fb6   0x08002fb6   0x00000002   PAD
+    0x08002fb8   0x08002fb8   0x000001d8   Code   RO          230    .text.run_pad_key   controller.o
+    0x08003190   0x08003190   0x000000b8   Code   RO           25    .text.sample_battery  board.o
+    0x08003248   0x08003248   0x0000002c   Code   RO          189    .text.set_valid     actions.o
+    0x08003274   0x08003274   0x00000084   Code   RO           92    .text.wait_ready    flash.o
+    0x080032f8   0x080032f8   0x00000076   Code   RO          224    .text.write_configuration  controller.o
+    0x0800336e   0x0800336e   0x00000029   Data   RO          163    .rodata.configuration  usb_hid.o
+    0x08003397   0x08003397   0x00000020   Data   RO          166    .rodata.cst32       usb_hid.o
+    0x080033b7   0x080033b7   0x0000003c   Data   RO          164    .rodata.maker       usb_hid.o
+    0x080033f3   0x080033f3   0x00000001   PAD
+    0x080033f4   0x080033f4   0x00000022   Data   RO          238    .rodata.pad_key.keys  controller.o
+    0x08003416   0x08003416   0x00000021   Data   RO          165    .rodata.product     usb_hid.o
+    0x08003437   0x08003437   0x00000006   Data   RO          196    .rodata.str1.1      actions.o
+    0x0800343d   0x0800343d   0x00000003   PAD
+    0x08003440   0x08003440   0x00000020   Data   RO          440    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_SRAM (Exec base: 0x20000000, Load base: 0x08003460, Size: 0x00002224, Max: 0x00004800, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08003460   0x00000001   Data   RW          239    .data.mode          controller.o
+    0x20000001   0x08003461   0x00000003   PAD
+    0x20000004   0x08003464   0x00000004   Data   RW          240    .data.pad_step      controller.o
+    0x20000008        -       0x00000001   Zero   RW          158    .bss.address        usb_hid.o
+    0x20000009        -       0x00000001   Zero   RW          157    .bss.address_pending  usb_hid.o
+    0x2000000a        -       0x00000001   Zero   RW           44    .bss.alarm_latched  board.o
+    0x2000000b   0x08003468   0x00000001   PAD
+    0x2000000c        -       0x00000004   Zero   RW           45    .bss.alarm_latched_at  board.o
+    0x20000010        -       0x00000002   Zero   RW           47    .bss.battery_mv     board.o
+    0x20000012   0x08003468   0x00000002   PAD
+    0x20000014        -       0x00000004   Zero   RW           50    .bss.beep_age       board.o
+    0x20000018        -       0x00000004   Zero   RW           49    .bss.beep_pattern   board.o
+    0x2000001c        -       0x00000001   Zero   RW           54    .bss.buzzer_driven  board.o
+    0x2000001d        -       0x00000001   Zero   RW          160    .bss.configured     usb_hid.o
+    0x2000001e   0x08003468   0x00000002   PAD
+    0x20000020        -       0x00000004   Zero   RW           52    .bss.critical_battery_samples  board.o
+    0x20000024        -       0x00000004   Zero   RW          207    .bss.due            actions.o
+    0x20000028        -       0x00000001   Zero   RW           98    .bss.flash_present  flash.o
+    0x20000029   0x08003468   0x00000001   PAD
+    0x2000002a        -       0x00000002   Zero   RW          205    .bss.frame_index    actions.o
+    0x2000002c        -       0x00000001   Zero   RW          162    .bss.idle           usb_hid.o
+    0x2000002d        -       0x00000001   Zero   RW          236    .bss.last_key       controller.o
+    0x2000002e   0x08003468   0x00000002   PAD
+    0x20000030        -       0x00000004   Zero   RW          234    .bss.last_pad       controller.o
+    0x20000034        -       0x00000001   Zero   RW           42    .bss.led_flash_requested  board.o
+    0x20000035   0x08003468   0x00000003   PAD
+    0x20000038        -       0x00000004   Zero   RW           43    .bss.led_flash_ticks  board.o
+    0x2000003c        -       0x00000001   Zero   RW           46    .bss.led_idle_high  board.o
+    0x2000003d   0x08003468   0x00000003   PAD
+    0x20000040        -       0x00000004   Zero   RW           53    .bss.low_battery_samples  board.o
+    0x20000044        -       0x00000004   Zero   RW           41    .bss.milliseconds   board.o
+    0x20000048        -       0x00000004   Zero   RW           48    .bss.next_battery_check  board.o
+    0x2000004c        -       0x00000001   Zero   RW          159    .bss.output_report  usb_hid.o
+    0x2000004d   0x08003468   0x00000001   PAD
+    0x2000004e        -       0x00000002   Zero   RW          233    .bss.pad_buttons    controller.o
+    0x20000050        -       0x00000002   Zero   RW          237    .bss.pad_hold       controller.o
+    0x20000052   0x08003468   0x00000002   PAD
+    0x20000054        -       0x00000004   Zero   RW          235    .bss.pad_poll       controller.o
+    0x20000058        -       0x00000001   Zero   RW          246    .bss.program_held   controller.o
+    0x20000059   0x08003468   0x00000003   PAD
+    0x2000005c        -       0x00000004   Zero   RW          245    .bss.program_pressed  controller.o
+    0x20000060        -       0x00000001   Zero   RW          244    .bss.program_was_down  controller.o
+    0x20000061        -       0x00000001   Zero   RW          161    .bss.protocol       usb_hid.o
+    0x20000062   0x08003468   0x00000002   PAD
+    0x20000064        -       0x00000880   Zero   RW          136    .bss.receivers      links.o
+    0x200008e4        -       0x00000002   Zero   RW          200    .bss.remaining      actions.o
+    0x200008e6        -       0x00000002   Zero   RW          201    .bss.requested_repeats  actions.o
+    0x200008e8        -       0x00000001   Zero   RW          243    .bss.run_held       controller.o
+    0x200008e9   0x08003468   0x00000003   PAD
+    0x200008ec        -       0x00000004   Zero   RW          242    .bss.run_pressed    controller.o
+    0x200008f0        -       0x00000001   Zero   RW          241    .bss.run_was_down   controller.o
+    0x200008f1        -       0x00000001   Zero   RW          198    .bss.running        actions.o
+    0x200008f2        -       0x00000001   Zero   RW          199    .bss.running_bank   actions.o
+    0x200008f3        -       0x00001000   Zero   RW           99    .bss.sector         flash.o
+    0x200018f3        -       0x00000400   Zero   RW          204    .bss.sequence       actions.o
+    0x20001cf3   0x08003468   0x00000001   PAD
+    0x20001cf4        -       0x00000002   Zero   RW          206    .bss.sequence_index  actions.o
+    0x20001cf6        -       0x00000002   Zero   RW          203    .bss.sequence_size  actions.o
+    0x20001cf8        -       0x00000001   Zero   RW           51    .bss.serial_error_pending  board.o
+    0x20001cf9        -       0x00000020   Zero   RW          139    .bss.servo_bytes    links.o
+    0x20001d19        -       0x00000001   Zero   RW          137    .bss.servo_done     links.o
+    0x20001d1a        -       0x00000001   Zero   RW          140    .bss.servo_size     links.o
+    0x20001d1b   0x08003468   0x00000001   PAD
+    0x20001d1c        -       0x00000004   Zero   RW          138    .bss.servo_used     links.o
+    0x20001d20        -       0x00000200   Zero   RW          195    .bss.speed          actions.o
+    0x20001f20        -       0x00000001   Zero   RW          247    .bss.taught_frames  controller.o
+    0x20001f21        -       0x00000001   Zero   RW          232    .bss.teaching       controller.o
+    0x20001f22        -       0x00000100   Zero   RW          202    .bss.tracks         actions.o
+    0x20002022        -       0x00000001   Zero   RW          211    .bss.upload_bank    actions.o
+    0x20002023        -       0x00000001   Zero   RW          209    .bss.upload_ready   actions.o
+    0x20002024        -       0x00000100   Zero   RW          210    .bss.upload_tracks  actions.o
+    0x20002124        -       0x00000100   Zero   RW          197    .bss.valid          actions.o
+
+
+    Execution Region ARM_LIB_STACK (Exec base: 0x20004800, Load base: 0x08003468, Size: 0x00000800, Max: 0x00000800, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20004800        -       0x00000800   Zero   RW            1    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      2180          0          6          0       2322       9180   actions.o
+      1754          0          0          0         39       7656   board.o
+      3424        136         34          5         27      11766   controller.o
+      1388          0          0          0       4097       5623   flash.o
+      1834          8          0          0       2214       8565   links.o
+        58          0          0          0          0        379   main.o
+         6          0        236          0          0        729   startup_mm32f103.o
+      1574        152        166          0          6       5702   usb_hid.o
+
+    ----------------------------------------------------------------------
+     12270        296        478          8      10780      49600   Object Totals
+         0          0         32          0       2048          0   (incl. Generated)
+        52          0          4          3         27          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         8          4          0          0          0          0   __rtentry7.o
+        52          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+        18          0          0          0          0         80   exit.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+        88          0          0          0          0         76   memcmp.o
+        68          0          0          0          0         68   rt_memclr.o
+        78          0          0          0          0         80   rt_memclr_w.o
+       138          0          0          0          0         68   rt_memcpy_v6.o
+       100          0          0          0          0         80   rt_memcpy_w.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       660         16          0          0          0        656   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       658         16          0          0          0        656   c_w.l
+
+    ----------------------------------------------------------------------
+       660         16          0          0          0        656   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     12930        312        478          8      10780      49956   Grand Totals
+     12930        312        478          8      10780      49956   ELF Image Totals
+     12930        312        478          8          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                13408 (  13.09kB)
+    Total RW  Size (RW Data + ZI Data)             10788 (  10.54kB)
+    Total ROM Size (Code + RO Data + RW Data)      13416 (  13.10kB)
+
+==============================================================================
+

@@ -1,0 +1,69 @@
+Dependencies for Project 'bus', Target 'bus MM32F103CBT6': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (..\Core\Inc\board.h)(0x6AFBC40C)()
+F (..\Core\Src\board.c)(0x6AFBC430)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/board.o -MD)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (..\Drivers\Inc\links.h)(0x6AFC2C81)
+F (..\Core\Src\main.c)(0x6AFBC430)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/main.o -MD)
+I (..\Application\Inc\actions.h)(0x6AFC2CAA)
+I (..\Drivers\Inc\links.h)(0x6AFC2C81)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (..\Application\Inc\controller.h)(0x6AFBB854)
+I (..\Drivers\Inc\flash.h)(0x6AFBB554)
+I (..\Drivers\Inc\usb_hid.h)(0x6AFBB554)
+F (..\Core\Src\startup_mm32f103.c)(0x6AFBB783)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/startup_mm32f103.o -MD)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+F (..\Drivers\Inc\flash.h)(0x6AFBB554)()
+F (..\Drivers\Inc\links.h)(0x6AFC2C81)()
+F (..\Drivers\Inc\usb_hid.h)(0x6AFBB554)()
+F (..\Drivers\Src\flash.c)(0x6AFBC40C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/flash.o -MD)
+I (..\Drivers\Inc\flash.h)(0x6AFBB554)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
+F (..\Drivers\Src\links.c)(0x6AFC2C81)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/links.o -MD)
+I (..\Drivers\Inc\links.h)(0x6AFC2C81)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (..\Drivers\Inc\usb_hid.h)(0x6AFBB554)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
+F (..\Drivers\Src\usb_hid.c)(0x6AFC2CDD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/usb_hid.o -MD)
+I (..\Drivers\Inc\links.h)(0x6AFC2C81)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (..\Drivers\Inc\usb_hid.h)(0x6AFBB554)
+F (..\Application\Inc\actions.h)(0x6AFC2CAA)()
+F (..\Application\Inc\controller.h)(0x6AFBB854)()
+F (..\Application\Src\actions.c)(0x6AFC2CAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/actions.o -MD)
+I (..\Application\Inc\actions.h)(0x6AFC2CAA)
+I (..\Drivers\Inc\links.h)(0x6AFC2C81)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (..\Drivers\Inc\flash.h)(0x6AFBB554)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
+F (..\Application\Src\controller.c)(0x6AFC2CAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -I ../Core/Inc -I ../Drivers/Inc -I ../Application/Inc -ffp-contract=off -Wall -Wextra-ID:/Keil_v5/ARM/Packs/MindMotion/MM32F103x8xB_DFP/1.4.8/Device/MM32F103x8xB/Include-D__UVISION_VERSION="538" -DMM32F103CBT-o ./objects/controller.o -MD)
+I (..\Application\Inc\actions.h)(0x6AFC2CAA)
+I (..\Drivers\Inc\links.h)(0x6AFC2C81)
+I (..\Core\Inc\board.h)(0x6AFBC40C)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (..\Application\Inc\controller.h)(0x6AFBB854)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
